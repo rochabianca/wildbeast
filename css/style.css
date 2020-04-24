@@ -1,4 +1,44 @@
+body, p, h1, ul, li, blockquote {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'Vollkorn', Georgia, serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100px;
+}
+
+/* Grid geral */
+
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas:
+  "header header header"
+  "sidnav content anuncios"
+  "footer footer footer";
+}
+.header {
+  grid-area: header;
+}
+.sidenav {
+  grid-area: sidnav;
+}
+.content {
+  grid-area: content;
+}
+.anuncios {
+  grid-area: anuncios;
+}
+.footer {
+  grid-area: footer;
 }
