@@ -29,6 +29,27 @@ img {
   "footer footer footer";
 }
 
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+    "header header header"
+    "sidnav content content"
+    "sidnav anuncios anuncios"
+    "footer footer footer";
+  }
+}
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "sidnav"
+    "content"
+    "anuncios"
+    "footer";
+  }
+}
+
 /* Header */
 .header {
   grid-area: header;
