@@ -14,7 +14,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -38,9 +38,9 @@ img {
     "footer footer footer";
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .estrutura {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-areas:
     "header"
     "sidnav"
@@ -82,7 +82,7 @@ img {
   margin-left: 30px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .header {
     grid-template-columns: auto;
   }
@@ -124,7 +124,7 @@ img {
     right: 20px
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .sidenav {
     position: relative;
     overflow-x: auto;
@@ -175,6 +175,11 @@ img {
 }
 .imagem-3 {
   width: 100%;
+}
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
 }
 
 /* Estilos Content */
@@ -272,6 +277,7 @@ p {
   align-content: start;
   padding: 30px;
   grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* Footer */
